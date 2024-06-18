@@ -1,0 +1,128 @@
+KPI Track = 
+    /* Section 1 */
+    SWITCH(
+        true(), 
+        SELECTEDVALUE(Summary[Index])=1,
+        CALCULATE([Flash Commitment])
+        ,
+        SELECTEDVALUE(Summary[Index])=2,
+        CALCULATE([Sales Achievement])
+        ,
+        SELECTEDVALUE(Summary[Index])=3,
+        CALCULATE([Intransit SOO (Qty)])
+        ,
+        SELECTEDVALUE(Summary[Index])=4,
+        CALCULATE([TTL Achievement (Billed & IT)])
+        ,
+        SELECTEDVALUE(Summary[Index])=5,
+        CALCULATE([Gap Commit vs. Sales])
+        ,
+        SELECTEDVALUE(Summary[Index])=6,
+        CALCULATE([Variance Percent])
+        ,
+        // open order qty : sum of SIO O and B 
+        SELECTEDVALUE(Summary[Index])=7,
+        CALCULATE([Open Order SOO (Qty)])
+        ,
+        SELECTEDVALUE(Summary[Index])=8,
+        CALCULATE([Achievement w/OO])
+        ,
+        SELECTEDVALUE(Summary[Index])=9,
+        CALCULATE([Gap Commit vs. Sales (Billed & IT & OO)])
+        ,
+        SELECTEDVALUE(Summary[Index])=10,
+        CALCULATE([Variance Percent w/OO])
+        ,
+        //********* ASP **************************************** 
+        SELECTEDVALUE(Summary[Index])=11,
+        CALCULATE([Flash Commitment (ASP)])
+        ,
+        SELECTEDVALUE(Summary[Index])=12,
+        CALCULATE([Sales Achievement (ASP)])
+        ,
+        SELECTEDVALUE(Summary[Index])=13,
+        CALCULATE([Intransit SOO (ASP)])
+        ,
+        SELECTEDVALUE(Summary[Index])=14,
+        CALCULATE([TTL Achievement ASP (Billed & IT)])
+        ,
+        SELECTEDVALUE(Summary[Index])=15,
+        CALCULATE([GAP Commit vs. Sales (ASP value)])
+        ,
+        SELECTEDVALUE(Summary[Index])=16,
+        CALCULATE([Variance Percent (ASP value)])
+        ,
+        SELECTEDVALUE(Summary[Index])=17,
+        CALCULATE([Open Order SOO (ASP)])
+        ,
+        SELECTEDVALUE(Summary[Index])=18,
+        CALCULATE([Achievement w/OO (ASP)])
+        ,
+        SELECTEDVALUE(Summary[Index])=19,
+        CALCULATE([Gap Commit vs. Sales ASP(Billed & IT & OO)])
+        ,
+        SELECTEDVALUE(Summary[Index])=20,
+        CALCULATE([Variance Percent ASP w/OO]),
+
+        //********* nsbp **************************************** 
+        SELECTEDVALUE(Summary[Index])=21,
+        CALCULATE([Flash Commitment (NSBP)])
+        ,
+        SELECTEDVALUE(Summary[Index])=22,
+        CALCULATE([Sales Achievement (NSBP)])
+        ,
+        SELECTEDVALUE(Summary[Index])=23,
+        CALCULATE([Intransit SOO (NSBP)])
+        ,
+        SELECTEDVALUE(Summary[Index])=24,
+        CALCULATE([TTL Achievement NSBP (Billed & IT)])
+        ,
+        SELECTEDVALUE(Summary[Index])=25,
+        CALCULATE([GAP Commit vs. Sales (NSBP value)])
+        ,
+        SELECTEDVALUE(Summary[Index])=26,
+        CALCULATE([Variance Percent (NSBP value)])
+        ,
+        SELECTEDVALUE(Summary[Index])=27,
+        CALCULATE([Open Order SOO (NSBP)])
+        ,
+        SELECTEDVALUE(Summary[Index])=28,
+        CALCULATE([Achievement w/OO (NSBP)])
+        ,
+        SELECTEDVALUE(Summary[Index])=29,
+        CALCULATE([Gap Commit vs. Sales NSBP (Billed & IT & OO)])
+        ,
+        SELECTEDVALUE(Summary[Index])=30,
+        CALCULATE([Variance Percent NSBP w/OO]),
+
+        //********* disty **************************************** 
+        SELECTEDVALUE(Summary[Index])=31,
+        CALCULATE([Flash Commitment (Disty)])
+        ,
+        SELECTEDVALUE(Summary[Index])=32,
+        CALCULATE([Sales Achievement (Disty)])
+        ,
+        SELECTEDVALUE(Summary[Index])=33,
+        CALCULATE([Intransit SOO (Disty)])
+        ,
+        SELECTEDVALUE(Summary[Index])=34,
+        CALCULATE([TTL Achievement Disty (Billed & IT)])
+        ,
+        SELECTEDVALUE(Summary[Index])=35,
+        CALCULATE([GAP Commit vs. Sales (Disty value)])
+        ,
+        SELECTEDVALUE(Summary[Index])=36,
+        CALCULATE([Variance Percent (Disty value)])
+        ,
+        SELECTEDVALUE(Summary[Index])=37,
+        CALCULATE([Open Order SOO (Disty)])
+        ,
+        SELECTEDVALUE(Summary[Index])=38,
+        CALCULATE([Achievement w/OO (Disty)])
+        ,
+        SELECTEDVALUE(Summary[Index])=39,
+        CALCULATE([Gap Commit vs. Sales Disty(Billed & IT & OO)])
+        ,
+        SELECTEDVALUE(Summary[Index])=40,
+        CALCULATE([Variance Percent Disty w/OO])
+    )  
